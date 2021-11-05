@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
+const chalk = require('chalk');
 
 const noteRouter = express.Router();
 
@@ -26,7 +27,7 @@ noteRouter.post('/api/notes', (req, res) => {
         if(err) {
             return console.log(err); 
         }
-        console.log('success!');
+        console.log(chalk.yellowBright((`SUCCESS! ${req.body.title} HAS BEEN ADDED!`)));
         res.json(newNote);
     });
 })
@@ -42,7 +43,7 @@ noteRouter.delete('/api/notes/:id', (req, res) => {
         if(err) {
             return console.log(err); 
         }
-        console.log('success!');
+        console.log(chalk.redBright((`DONE! NOTE #${req.params.id} HAS BEEN DELETED`)));
         res.json(filtered);
     });
 })
