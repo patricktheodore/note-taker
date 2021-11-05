@@ -1,3 +1,19 @@
+:root {
+  --dark: #343a40;
+  --light: #e3e8ec;
+  --primary: #5d666b;
+  --secondary: #a7a7a7;
+}
+
+body {
+  background-color: white;
+  color: var(--secondary);
+  line-height: 1.5;
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
 html,
 body {
   height: 100%;
@@ -6,7 +22,29 @@ body {
 }
 
 .save-note {
-  display: none;
+  /* display: none; */
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  padding-top: 0.25rem;
+  border-radius: 50%;
+}
+
+ .new-note {
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  padding-top: 0.25rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.save-note:hover, 
+.new-note:hover {
+  background-color: white;
+  color: #18BC9C;
+  box-shadow: 0 0 5px var(--dark);
 }
 
 .icons i {
@@ -28,6 +66,7 @@ body {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
+  padding-left: 15px;
 }
 
 .note-title {
@@ -38,7 +77,7 @@ body {
 
 .note-title:read-only,
 .note-textarea:read-only {
-  color: #757575;
+  color: #3b3b3b;
 }
 
 .list-container .card {
@@ -76,3 +115,25 @@ body {
   padding: 20px;
   cursor: pointer;
 }
+
+.jumbotron {
+  background-color: white;
+}
+
+.main-display-text {
+  color: var(--dark);
+}
+
+.start-btn {
+  color: white;
+  background-color: #18BC9C;
+  border: none;
+}
+
+.start-btn:hover {
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+
+
