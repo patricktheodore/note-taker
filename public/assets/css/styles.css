@@ -22,29 +22,7 @@ body {
 }
 
 .save-note {
-  /* display: none; */
-  color: white;
-  height: 2rem;
-  width: 2rem;
-  text-align: center;
-  padding-top: 0.25rem;
-  border-radius: 50%;
-}
-
- .new-note {
-  color: white;
-  height: 2rem;
-  width: 2rem;
-  padding-top: 0.25rem;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.save-note:hover, 
-.new-note:hover {
-  background-color: white;
-  color: #18BC9C;
-  box-shadow: 0 0 5px var(--dark);
+  display: none;
 }
 
 .icons i {
